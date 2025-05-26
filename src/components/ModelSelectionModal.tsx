@@ -43,6 +43,7 @@ interface ModelSelectionModalProps {
   authCode?: string;
   setAuthCode?: (code: string) => void;
   isAuthLoading?: boolean;
+  showWikiType: boolean;
 }
 
 export default function ModelSelectionModal({
@@ -76,6 +77,7 @@ export default function ModelSelectionModal({
   showWikiType = true,
   showTokenInput = false,
   repositoryType = 'github',
+  showWikiType = true,
 }: ModelSelectionModalProps) {
   const { messages: t } = useLanguage();
 
