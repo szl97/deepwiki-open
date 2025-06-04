@@ -884,7 +884,6 @@ const Ask: React.FC<AskProps> = ({
         showWikiType={false}
         authRequired={false}
         isAuthLoading={false}
-        showWikiType={false}
       />
     </div>
   );

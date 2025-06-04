@@ -33,7 +33,6 @@ interface ModelSelectionModalProps {
   includedFiles?: string;
   setIncludedFiles?: (value: string) => void;
   showFileFilters?: boolean;
-  showWikiType: boolean;
   
   // Token input for refresh
   showTokenInput?: boolean;
@@ -68,13 +67,11 @@ export default function ModelSelectionModal({
   setIncludedDirs,
   includedFiles = '',
   setIncludedFiles,
-  showFileFilters = false,
   authRequired = false,
   authCode = '',
   setAuthCode,
   isAuthLoading,
   showFileFilters = false,
-  showWikiType = true,
   showTokenInput = false,
   repositoryType = 'github',
   showWikiType = true,
